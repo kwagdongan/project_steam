@@ -8,7 +8,7 @@ st.title("🎮 Steam 게임 분석 메인")
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("dataset.csv")
+    return pd.read_csv("datas.csv")
 
 df = load_data()
 st.metric("전체 데이터 개수", f"{df.shape[0]:,} 개")
