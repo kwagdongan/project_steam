@@ -5,7 +5,7 @@ st.title("📊 레드오션 태그 분석")
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("dataset.csv")
+    return pd.read_csv("datas.csv")
 
 df = load_data()
 
