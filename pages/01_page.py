@@ -10,7 +10,7 @@ def load_data():
 df = load_data()
 
 # 태그 분리 및 카운트
-df_tags = df['tags'].str.split(',').explode().str.strip()
+df_tags = df['tags'].str.split('|').explode().str.strip()
 tag_counts = df_tags.value_counts().head(10)
 
 st.subheader("가장 게임이 많은 상위 10개 태그")
