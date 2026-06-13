@@ -1,6 +1,11 @@
 import streamlit as st
 import pandas as pd
 
+import os
+# 현재 경로에 pages 폴더가 있는지 확인
+st.write(f"현재 경로: {os.getcwd()}")
+st.write(f"pages 폴더 존재 여부: {os.path.exists('pages')}")
+
 st.set_page_config(page_title="Steam 분석 앱", layout="wide")
 
 st.title("🎮 Steam 게임 태그 분석 대시보드")
