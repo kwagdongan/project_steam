@@ -5,7 +5,8 @@ st.set_page_config(page_title="Steam 분석 앱", layout="wide")
 
 st.title("🎮 Steam 게임 태그 분석 대시보드")
 st.write("왼쪽 사이드바에서 분석 페이지를 선택하세요.")
-
+# 사이드바에 글자 하나만 띄워보기
+st.sidebar.title("테스트 사이드바")
 @st.cache_data
 def load_data():
     return pd.read_csv("datas.csv")
