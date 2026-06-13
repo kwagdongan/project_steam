@@ -5,13 +5,7 @@ import matplotlib.pyplot as plt
 
 st.title("Steam 게임 태그 분석")
 
-uploaded_file = st.file_uploader(
-    "dataset.csv",
-    type=["csv"]
-)
-
-if uploaded_file is not None:
-    df = pd.read_csv(uploaded_file)
+df = pd.read_csv("datas.csv")
 
     if "tags" not in df.columns:
         st.error("'tags' 컬럼이 존재하지 않습니다.")
